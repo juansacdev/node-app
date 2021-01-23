@@ -60,5 +60,6 @@ Routes: {
         http://localhost:3000/user/signin
         http://localhost:3000/user/signup
         http://localhost:3000/notes
+        http://localhost:3000/notes/add
     }
 }`));

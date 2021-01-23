@@ -1,0 +1,22 @@
+{
+  "name": "node-app",
+  "version": "1.0.0",
+  "description": "Aplicacion completa [login, registro, CRUD, DB, ...] ",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "author": "Juan Sebastián Agudelo @juansacok",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "method-override": "^3.0.0",
+    "mogoose": "0.0.1-security",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  }
+}

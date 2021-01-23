@@ -3,12 +3,14 @@ const router = Router();
 
 
 router.get('/user/signin', (req, res) => {
-    res.send('Ingresando a la app');
+    res.render('user/signin');
 });
 
 router.get('/user/signup', (req, res) => {
-    res.send('formulario de auntenticación');
+    res.render('user/signup');
 });
+
+
 
 
 

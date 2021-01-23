@@ -1,9 +1,12 @@
 const express = require('express');
+const Handlebars = require('handlebars');
 const path = require('path');
 const hbs = require('express-handlebars');
+const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access');
 const methodOverride = require('method-override');
 const session = require('express-session');
 require('dotenv').config();
+
 
 
 
@@ -18,11 +21,13 @@ app.set('port', process.env.PORT);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', '.hbs');
 app.engine('.hbs', hbs({
+    handlebars : allowInsecurePrototypeAccess(Handlebars),
     defaultLayout: 'main',
     layoutsDir: path.join(app.get('views'), 'layouts'),
     partialsDir: path.join(app.get('views'), 'partials'),
     extname: '.hbs'
 }));
+
 
 
 

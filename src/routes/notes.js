@@ -33,9 +33,12 @@ router.post('/notes/new-notes', async (req, res) => {
 });
 
 
-router.get('/notes', (req, res) => {
-    res.send('Notas desde la base de datos');
+router.get('/notes', async (req, res) => {
+    const notes = await Note.find().sort({date: 'desc'});
+    res.render('notes/all-notes', { notes });
 });
+
+
 
 
 

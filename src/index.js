@@ -66,11 +66,11 @@ app.listen(app.get('port'), () => console.log(`
 Server on: http://localhost:${app.get('port')}
 Routes: {
     GET: {
-        http://localhost:8080/
-        http://localhost:8080/about
-        http://localhost:8080/user/signin
-        http://localhost:8080/user/signup
-        http://localhost:8080/notes
-        http://localhost:8080/notes/add
+        http://localhost:3000/
+        http://localhost:3000/about
+        http://localhost:3000/user/signin
+        http://localhost:3000/user/signup
+        http://localhost:3000/notes
+        http://localhost:3000/notes/add
     }
 }`));

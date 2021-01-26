@@ -19,6 +19,7 @@ router.post('/notes/new-notes', async (req, res) => {
         errors.push({text: 'Please Write a Description'})
     }
     if (errors.length > 0) {
+        console.log(errors);
         res.render('notes/new-note', {
             errors,
             title,

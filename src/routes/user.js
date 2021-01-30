@@ -62,7 +62,10 @@ router.post('/user/signup', async (req, res) => {
 });
 
 
-
+router.get('/user/logout', (req, res) => {
+    req.logout();
+    res.redirect('/')
+})
 
 
 
